@@ -5,9 +5,16 @@
 <head>
  <meta charset="UTF-8">
  <title>My Website - About</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}?v=1">
+
 </head>
 <body>
- <h1>Breanna Thelwell</h1>
- <p>I am a student at the University of the West Indies, and I am currently learning Web Development II. I enjoy puzzles, such as crosswords, sudoku, jigsaw, anagrams, riddles, and minesweeper.  </p>
+    <div class="top-border"></div> <!--added boarder-->
+    <div class="container">
+        <h1>Getting To Know <span class="adelia-font">Breanna Thelwell</span></h1> <!--added italics and wrap name inside for desired font effect-->
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture" class="profile-img"> <!--added image with alt text-->
+        <p>I am a student at the University of the West Indies, and I am currently learning Web Development II. I enjoy puzzles, such as crosswords, sudoku, jigsaw, anagrams, riddles, and minesweeper.</p>
+    </div>
+    <div class="bottom-border"></div>  <!--added boarder-->
 </body>
 </html>
